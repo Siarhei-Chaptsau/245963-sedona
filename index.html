@@ -2,11 +2,115 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
   <body>
+	  <header class="page-header">
+      <nav class="page-header__items">
+        <li class="page-header__item"><a href="#">ГЛАВНАЯ</a>
+          <button class="page-header__close" type="button"><img class="page-header__btn  page-header__btn--menu-close  btn" src="http://placehold.it/25x25" alt="close menu"></button>
+        </li>
+        <li class="page-header__item"><a href="#">ФОТО И ВИДЕО</a></li>
+        <li class="page-header__item"><a href="#">ФОРМА ОТЗЫВА</a></li>
+        <li class="page-header__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+      </nav>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <div class="page-header__logo">
+        <a href="#"><img src="http://placehold.it/100x80" alt="logo"></a>
+        <button class="page-header__open" type="button"><img class="page-header__btn  page-header__btn--menu-open  btn" src="http://placehold.it/25x25" alt="open menu"></button>
+      </div>
+    </header>
 
+    <div class="promo">
+      <div class="promo__picture">
+        <h2 class="promo__greeting">WELCOME</h2>
+        <p class="promo__text  promo__text--black-italic">— to the gorgeous —</p>
+        <h1 class="promo__header">SEDONA</h1>
+        <p class="promo__text  promo__text--black-italic">“Becouse the Grand <br> Canyon sucks!„</p>
+      </div>
+
+      <div class="promo__list">
+        <h3 class="promo__title">СЕДОНА - НЕБОЛЬШОЙ <br>ГОРОДОК В АРИЗОНЕ, <br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h3>
+        <p class="promo__text">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ <br>СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!</p>
+      </div>
+    </div>
+
+    <div class="reasons">
+      <div class="reasons__first">
+        <h3 class="reasons__title  reasons__title--white">НАСТОЯЩИЙ ГОРОДОК</h3>
+        <p class="reasons__text  reasons__text--white">- №1 -</p>
+        <p class="reasons__text  reasons__text--white">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, <br>ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
+        <img src="http://placehold.it/320x260">
+        <ul class="reasons__items">
+          <li class="reasons__item  reasons__item--housing">
+            <h3 class="reasons__title">ЖИЛЬЁ</h3>
+            <p class="reasons__text">РЕКОМЕНДУЕТСЯ ПОЖИТЬ В <br>НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В <br>КИНО!</p>
+          </li>
+          <li class="reasons__item  reasons__item--souvenirs">
+            <h3 class="reasons__title">СУВЕНИРЫ</h3>
+            <p class="reasons__text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И <br>МЕСТНОГО ПРОИЗВОДСТВА!</p>
+          </li>
+          <li class="reasons__item  reasons__item--food">
+            <h3 class="reasons__title">ЕДА</h3>
+            <p class="reasons__text">ВСЕГДА ЗАКАЗЫВАЙТЕ <br>ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ <br>РАЗОЧАРУЕТЕСЬ!</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reasons__second">
+        <h3 class="reasons__title  reasons__title--white">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+        <p class="reasons__text  reasons__text--white">- №2 -</p>
+        <p class="reasons__text  reasons__text--white">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ <br>ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
+        <img src="http://placehold.it/320x260">
+      </div>
+
+      <div class="reasons__others">
+        <div class="reasons__third">
+          <h3 class="reasons__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+          <p class="reasons__text">- №3 -</p>
+          <p class="reasons__text">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ <br>НАХОДЯТСЯ БЛИЗКО</p>
+        </div>
+
+        <div class="reasons__fourth">
+          <h3 class="reasons__title">КРАСИВАЯ ДОРОГА</h3>
+          <p class="reasons__text">- №4 -</p>
+          <p class="reasons__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА <br>СОВСЕМ НЕ СКУЧНО</p>
+        </div>
+
+        <div class="reasons__fifth">
+          <h3 class="reasons__title">МАЛО ТУРИСТОВ</h3>
+          <p class="reasons__text">- №5 -</p>
+          <p class="reasons__text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН <br>И ТОЛПИТСЯ ТАМ</p>
+        </div>
+
+        <div class="reasons__interest">
+          <h3 class="reasons__title  reasons__title--big">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+          <p class="reasons__text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ <br>ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ <br>ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+          <input class="reasons__btn" type="submit" value="НАЙТИ ГОСТИНИЦУ">
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__location">
+        <img src="http://placehold.it/320x350">
+      </div>
+
+      <div class="page-footer__contacts">
+        <a class="page-footer__hashtag" href="https://www.google.com/">#VISITSEDONA</a>
+        <div class="page-footer__social  social-links">
+          <a class="social-link  social-link--twitter" href="https://twitter.com/?lang=ru"><img src="http://placehold.it/50x50"></a>
+          <a class="social-link  social-link--fb" href="https://facebook.com/htmlacademy"><img src="http://placehold.it/50x50"></a>
+          <a class="social-link  social-link--youtube" href="https://www.youtube.com/"><img src="http://placehold.it/50x50"></a>
+        </div>
+
+        <div class="page-footer__copyright">
+          <p class="page-footer__text">РАЗРАБОТАНО</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+            <img src="http://placehold.it/30x35">
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
