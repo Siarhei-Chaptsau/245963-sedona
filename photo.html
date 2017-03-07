@@ -7,60 +7,60 @@
   <body>
 	  <header class="page-header">
       <nav class="page-header__items">
-        <li class="page-header__item"><a href="#">ГЛАВНАЯ</a>
-          <button class="page-header__close" type="button"><img class="page-header__btn  page-header__btn--menu-close  btn" src="http://placehold.it/25x25" alt="close menu"></button>
-        </li>
-        <li class="page-header__item"><a href="#">ФОТО И ВИДЕО</a></li>
-        <li class="page-header__item"><a href="#">ФОРМА ОТЗЫВА</a></li>
-        <li class="page-header__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+        <li class="page-header__item"><a class="page-header__link" href="#">Главная</a></li>
+        <li class="page-header__item"><a class="page-header__link" href="#">Фото и видео</a></li>
+        <li class="page-header__item"><a class="page-header__link" href="#">Форма отзыва</a></li>
+        <li class="page-header__item"><a  lass="page-header__link" href="https://htmlacademy.ru">Html academy</a></li>
       </nav>
 
       <div class="page-header__logo">
-				<a href="#"><img src="http://placehold.it/100x80" alt="logo"></a>
-        <button class="page-header__open" type="button"><img class="page-header__btn  page-header__btn--menu-open  btn" src="http://placehold.it/25x25" alt="open menu"></button>
+				<a class="page-header__logo-link" href="#"><img src="http://placehold.it/100x80" alt="logo"></a>
+        <button class="page-header__trigger" type="button"></button>
 			</div>
     </header>
 
-    <div class="advantages">
+    <section class="advantages">
       <div class="advantages__promo promo">
-        <h1 class="promo__header">SEDONA</h1>
-        <h3 class="promo__title">ФОТО И ВИДЕО</h3>
-        <p class="promo__text  advantages__text">НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ<br> ИЗ-ЗА КУРСА? ФОТОГРАФИИ ПОМОГУТ<br> ВАМ ЗАБЫТЬ О ПОЛИТИКЕ И ЭКОНОМИКЕ.</p>
+        <div class="advantages__picture">
+          <img src="http://placehold.it/320x200" alt="Sedona">
+        </div>
+        <h3 class="promo__title">Фото и видео</h3>
+        <p class="promo__text  advantages__text">Не можете решиться на путешествие<br> из-за курса? Фотографии помогут<br> вам забыть о политике и экономике.</p>
       </div>
 
-      <div class="advantages__item  advantages__item--place">
+      <article class="advantages__item  advantages__item--place">
         <img class="advantages__pic" src="http://placehold.it/280x280">
-        <h4 class="advantages__title">НЕРОДНЫЕ ПРОСТОРЫ</h4>
-        <p class="advantages__text">Автор фото: Борис</p>
+        <h4 class="advantages__title">Неродные просторы</h4>
+        <cite class="advantages__text">Автор фото: Борис</cite>
         <a class="advantages__ btn" href="#"><img src="http://placehold.it/22x22"></a>
-        <b class="advantages__text">1350</b>
-      </div>
-      <div class="advantages__item  advantages__item--green">
+        <span class="advantages__text">1350</span>
+      </article>
+      <article class="advantages__item  advantages__item--green">
         <img  class="advantages__pic" src="http://placehold.it/280x280">
-        <h4 class="advantages__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h4>
-        <p class="advantages__text">Автор фото: Сергей</p>
+        <h4 class="advantages__title">Местная растительность</h4>
+        <cite class="advantages__text">Автор фото: Сергей</cite>
         <a class="advantages__ btn" href="#"><img src="http://placehold.it/22x22"></a>
-        <b class="advantages__text">143</b>
-      </div>
-      <div class="advantages__item  advantages__item--road">
+        <span class="advantages__text">143</span>
+      </article>
+      <article class="advantages__item  advantages__item--road">
         <img  class="advantages__pic" src="http://placehold.it/280x280">
-        <h4 class="advantages__title">ДОРОГА НА СЕВЕР</h4>
-        <p class="advantages__text">Автор фото: Петр</p>
+        <h4 class="advantages__title">Дорога на север</h4>
+        <cite class="advantages__text">Автор фото: Петр</cite>
         <a class="advantages__ btn" href="#"><img src="http://placehold.it/22x22"></a>
-        <b class="advantages__text">96</b>
-      </div>
-      <div class="advantages__item  advantages__item--bridge">
+        <span class="advantages__text">96</span>
+      </article>
+      <article class="advantages__item  advantages__item--bridge">
         <img  class="advantages__pic" src="http://placehold.it/280x280">
-        <h4 class="advantages__title">МОСТ ДЬЯВОЛА</h4>
-        <p class="advantages__text">Автор фото: Антон</p>
+        <h4 class="advantages__title">Мост дьявола</h4>
+        <cite class="advantages__text">Автор фото: Антон</cite>
         <a class="advantages__ btn" href="#"><img src="http://placehold.it/22x22"></a>
-        <b class="advantages__text">254</b>
-      </div>
-    </div>
+        <span class="advantages__text">254</span>
+      </article>
+    </section>
 
     <div class="video">
-      <h3 class="video__title">ВЫ ЕЩЁ СОМНЕВАЕТЕСЬ?</h3>
-      <p class="video__text">СМОТРИТЕ ВИДЕОПРИЗЕНТАЦИЮ И <br>СКОРЕЕ ЗА БИЛЕТАМИ, ПОКА ОНИ НЕ <br>ПОДОРОЖАЛИ В ОЧЕРЕДНОЙ РАЗ!</p>
+      <h3 class="video__title">Вы ещё сомневаетесь?</h3>
+      <p class="video__text">Смотрите видеопризентацию и <br>скорее за билетами, пока они не <br>подорожали в очередной раз!</p>
       <img class="video__clip" src="http://placehold.it/320x200">
     </div>
 
@@ -74,7 +74,7 @@
       </div>
 
       <div class="page-footer__copyright">
-        <p class="page-footer__text">РАЗРАБОТАНО</p>
+        <p class="page-footer__text">Разработано/p>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
           <img src="http://placehold.it/30x35">
         </a>
