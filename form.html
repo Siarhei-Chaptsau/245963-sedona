@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Отзыв</title>
+  </head>
+  <body>
+	  <header class="page-header">
+      <nav class="page-header__items">
+        <li class="page-header__item"><a class="page-header__link" href="#">Главная</a></li>
+        <li class="page-header__item"><a class="page-header__link" href="#">Фото и видео</a></li>
+        <li class="page-header__item"><a class="page-header__link" href="#">Форма отзыва</a></li>
+        <li class="page-header__item"><a class="page-header__link" href="https://htmlacademy.ru">Html academy</a></li>
+      </nav>
+
+      <div class="page-header__logo">
+				<a class="page-header__logo-link" href="#"><img src="http://placehold.it/100x80" alt="logo"></a>
+        <button class="page-header__trigger" type="button"></button>
+			</div>
+    </header>
+
+    <div class="promo">
+      <div class="promo__picture">
+        <img src="http://placehold.it/320x200" alt="Sedona">
+      </div>
+      <h3 class="promo__title"Ооставьте свой отзыв</h3>
+      <p class="promo__text">Помогите нашим отелям стать лучше оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+    </div>﻿
+
+    <form class="form"  action="https://echo.htmlacademy.ru/">
+        <div class="form__field field-text">
+          <h3 class="field-text__title">Представьтесь:</h3>
+          <div class="field-text__items">
+            <label class="field-text__item">
+              <span class="field-text__text">Имя:</span>
+              <input class="field-text__input" type="text" name="name-1" placeholder="Петр">
+            </label>
+            <label class="field-text__item">
+              <span class="field-text__text">Фамилия:</span>
+              <input class="field-text__input" type="text" name="name-2" placeholder="Иванов">
+            </label>
+            <label class="field-text__item">
+              <span class="field-text__text">Отчество:</span>
+              <input class="field-text__input" type="text" name="name-3" placeholder="Александрович">
+            </label>
+          </div>
+        </div>
+
+        <div class="form__field field-text">
+          <h3 class="field-text__title">Контактная информация:</h3>
+          <div class="field-text__wraps">﻿
+            <div class="field-text__wrap">﻿
+              <label class="field-text__item"  for="tel">Контактный телефон*:</label>
+              <input class="field-text__input" type="tel" id="tel"  name="tel" placeholder="Введите телефон">
+              <span>Ошибка, переправьте номер</span>
+            </div>
+            <div class="field-text__wrap">﻿
+              <label class="field-text__item"  for="email">Электронная почта*:</label>
+              <input class="field-text__input" type="email"  id="email"  name="email" placeholder="Введите e-mail">
+            </div>
+          </div>
+        </div>
+
+        <div class="form__field field-radio">
+          <h3 class="field-radio__title">Ваше общее впечатление:</h3>
+          <div class="field-radio__items">﻿
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio"  name="radio" value="1" checked>
+              <span class="field-radio__text">Скорее положительное</span>
+            </label>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio"  name="radio" value="2">
+              <span class="field-radio__text">Скорее отрицательное</span>
+            </label>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio"  name="radio"  value="3">
+              <span class="field-radio__text">Затрудняюсь ответить</span>
+            </label>
+          </div>
+        </div>﻿
+
+        <div class="form__field field-checkbox">
+          <h3 class="field-checkbox__title">Посещённые достопримечательности:</h3>
+          <div class="field-checkbox__items">﻿
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox"  name="checkbox-1" checked>
+              <span class="field-checkbox__text">Мост Дъявола</span>
+            </label>
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox"  name="checkbox-2" checked>
+              <span class="field-checkbox__text">Слайд-парк</span>
+            </label>
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox"  name="checkbox-3">
+              <span class="field-checkbox__text">Гора-Колокол</span>
+            </label>
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox"  name="checkbox-4" checked>
+              <span class="field-checkbox__text">Красные скалы</span>
+            </label>
+          </div>
+        </div>﻿
+
+        <div class="form__field field-review">
+          <label class="field-review__label"  for="review">Опишите свои эмоции:</label>
+          <textarea class="field-review__textarea"  type="text"  id="review"  name="review-field"  placeholder="Опишите подробно все свои восторги"></textarea>
+          <input class="field-review__btn  btn"  type="submit"  value="Отправить отзыв">
+        </div>
+    </form>
+
+    <footer class="page-footer">
+      <div class="page-footer__contacts">
+        <a class="page-footer__hashtag" href="https://www.google.com/">#VISITSEDONA</a>
+        <div class="page-footer__social  social-links">
+          <a class="social-link  social-link--twitter" href="https://twitter.com/?lang=ru"><img src="http://placehold.it/50x50"></a>
+          <a class="social-link  social-link--fb" href="https://facebook.com/htmlacademy"><img src="http://placehold.it/50x50"></a>
+          <a class="social-link  social-link--youtube" href="https://www.youtube.com/"><img src="http://placehold.it/50x50"></a>
+        </div>
+
+        <div class="page-footer__copyright">
+          <p class="page-footer__text">Разработано</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+            <img src="http://placehold.it/30x35">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
