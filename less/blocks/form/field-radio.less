@@ -1,0 +1,40 @@
+.field-radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 290px;
+  border-bottom: 2px solid #f2f2f2;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    width: 280px;
+    margin: 14px 0px;
+    flex-grow: 1;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: @font-size--title;
+    line-height: 26px;
+    font-family: "PT Sans bold", sans-serif;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-left: 25px;
+    font-size: @font-size--title;
+    line-height: 26px;
+    font-family: "PT Sans", sans-serif;
+  }
+}

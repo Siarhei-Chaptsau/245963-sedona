@@ -1,0 +1,45 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 320px;
+  height: 350px;
+  background-color: #ffffff;
+
+  &--big {
+    height: 630px;
+  }
+
+  &__picture {
+    margin-top: -28px;
+    height: 160px;
+
+    &--big {
+      height: 390px;
+    }
+  }
+
+  &__item {
+    height: 240px;
+    padding-top: 40px;
+  }
+
+  &__title {
+    padding: 0px 12px;
+    text-align: center;
+    font-size: @font-size--title;
+    line-height: 26px;
+    font-family: "PT Sans bold", sans-serif;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    padding: 0px 15px;
+    text-align: center;
+    font-size: @font-size--text;
+    line-height: 30px;
+    font-family: "PT Sans", sans-serif;
+    text-transform: uppercase;
+  }
+}
