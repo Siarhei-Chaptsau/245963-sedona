@@ -6,22 +6,22 @@
   margin: 0 auto;
   width: 320px;
   height: 2124px;
-  background-color: #ffffff;
+  background-color: @color-white;
 
-  &__items {
+  .post__items {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
   }
 
-  &__item {
+  .post__item {
     display: block;
     height: 415px;
     padding: 25px 0px 20px;
     box-sizing:border-box;
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid @color-gray-dark;
+    border-bottom: 1px solid @color-gray-dark;
 
     &:first-child {
       border-top: none;
@@ -32,31 +32,31 @@
     }
   }
 
-  &__blockquote {
+  .post__blockquote {
     height: 40px;
     margin: 15px 0px;
     padding: 0px;
   }
 
-  &__title {
+  .post__title {
     margin: 0px 0px 10px 0px;
-    font-size: @font-size--text;
-    font-family: "PT Sans bold", sans-serif;
+    font-size: @font-size__text;
+    font-family: @font-family__title;
     text-transform: uppercase;
   }
 
-  &__text {
-    font-size: @font-size--text;
-    font-family: "PT Sans", sans-serif;
+  .post__text {
+    font-size: @font-size__text;
+    font-family: @font-family__text;
     font-style: normal;
   }
 
-  &__amount {
+  .post__amount {
     margin-left: 13px;
     font-weight: bold;
   }
 
-  &__video {
+  .post__video {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -66,8 +66,6 @@
     padding-bottom: 90px;
     width: 320px;
     height: 460px;
-    background-color: #ffffff;
+    background-color: @color-white;
   }
-
-
 }

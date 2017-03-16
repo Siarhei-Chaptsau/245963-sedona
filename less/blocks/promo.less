@@ -5,13 +5,13 @@
   margin: 0 auto;
   width: 320px;
   height: 350px;
-  background-color: #ffffff;
+  background-color: @color-white;
 
   &--big {
     height: 630px;
   }
 
-  &__picture {
+  .promo__picture {
     margin-top: -28px;
     height: 160px;
 
@@ -20,26 +20,26 @@
     }
   }
 
-  &__item {
+  .promo__item {
     height: 240px;
     padding-top: 40px;
   }
 
-  &__title {
+  .promo__title {
     padding: 0px 12px;
     text-align: center;
-    font-size: @font-size--title;
+    font-size: @font-size__title;
     line-height: 26px;
-    font-family: "PT Sans bold", sans-serif;
+    font-family: @font-family__title;
     text-transform: uppercase;
   }
 
-  &__text {
+  .promo__text {
     padding: 0px 15px;
     text-align: center;
-    font-size: @font-size--text;
+    font-size: @font-size__text;
     line-height: 30px;
-    font-family: "PT Sans", sans-serif;
+    font-family: @font-family__text;
     text-transform: uppercase;
   }
 }

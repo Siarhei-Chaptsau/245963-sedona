@@ -3,38 +3,38 @@
   flex-direction: column;
   justify-content: space-between;
   height: 410px;
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 2px solid @color-gray;
 
-  &__items {
+  .field-checkbox__items {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items:center;
   }
 
-  &__item {
+  .field-checkbox__item {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
     height: 60px;
     width: 280px;
     margin: 14px 0px;
     flex-grow: 1;
   }
 
-  &__title {
+  .field-checkbox__title {
     text-align: center;
-    font-size: @font-size--title;
+    font-size: @font-size__title;
     line-height: 26px;
-    font-family: "PT Sans bold", sans-serif;
+    font-family: @font-family__title;
     text-transform: uppercase;
   }
 
-  &__text {
+  .field-checkbox__text {
     margin-left: 25px;
-    font-size: @font-size--title;
+    font-size: @font-size__title;
     line-height: 26px;
-    font-family: "PT Sans", sans-serif;
+    font-family: @font-family__text;
   }
 }
