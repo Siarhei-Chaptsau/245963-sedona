@@ -2,17 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header class="page-header">
       <nav class="page-header__items">
-        <li class="page-header__item"><a class="page-header__link" href="#">Главная</a></li>
-        <li class="page-header__item"><a class="page-header__link" href="#">Фото и видео</a></li>
-        <li class="page-header__item"><a class="page-header__link" href="#">Форма отзыва</a></li>
-        <li class="page-header__item"><a class="page-header__link" href="https://htmlacademy.ru">Html academy</a></li>
+        <ul class="page-header__list">
+          <li class="page-header__item"><a class="page-header__link" href="#">Главная</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="#">Фото и видео</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="#">Форма отзыва</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="https://htmlacademy.ru">Html academy</a></li>
+        </ul>
       </nav>
-      <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
 
       <div class="page-header__logo">
         <a class="page-header__logo-link" href="#"><img src="http://placehold.it/100x80" alt="logo"></a>
@@ -20,9 +22,9 @@
       </div>
     </header>
 
-    <div class="promo">
-      <div class="promo__picture">
-        <img src="http://placehold.it/320x350" alt="Sedona">
+    <div class="promo  promo--big">
+      <div class="promo__picture  promo__picture--big">
+        <img src="img/bg-back-mobile@1x.jpg" width="320" height="390" alt="Sedona">
       </div>
 
       <div class="promo__item">
@@ -32,11 +34,11 @@
     </div>
 
     <div class="reason">
-      <div class="reason__item">
+      <div class="reason__item  reason__item--white">
         <h2 class="reason__title">Настоящий городок</h2>
         <p class="reason__text">- №1 -</p>
         <p class="reason__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
-        <img src="http://placehold.it/320x260">
+        <img src="img/photo-city@1x.jpg" width="320" height="260">
       </div>
     </div>
 
@@ -58,11 +60,11 @@
     </div>
 
     <div class="reason">
-      <div class="reason__item">
+      <div class="reason__item  reason__item--white">
         <h2 class="reason__title">Там есть мост дьявола</h2>
         <p class="reason__text">- №2 -</p>
         <p class="reason__text">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
-        <img src="http://placehold.it/320x260">
+        <img src="img/photo-4-mobile@1x.jpg" width="320" height="260">
       </div>
 
       <div class="reason__promo-items">
@@ -86,29 +88,29 @@
       </div>
     </div>
 
-    <div class="interest">
-      <h2 class="interest__title">Заинтересовались?</h2>
-      <p class="interest__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <input class="interest__btn" type="submit" value="Найти гостиницу">
+    <div class="search">
+      <h2 class="search__title">Заинтересовались?</h2>
+      <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <input class="search__btn  btn" type="submit" value="Найти гостиницу">
     </div>
 
-    <footer class="page-footer">
+    <footer class="page-footer  page-footer--big">
       <div class="page-footer__location">
-        <img src="http://placehold.it/320x350">
+        <img src="img/bg-map-mobile@1x.jpg">
       </div>
 
       <div class="page-footer__contacts">
         <a class="page-footer__hashtag" href="https://www.google.com/">#VISITSEDONA</a>
-        <div class="page-footer__social  social-links">
-          <a class="social-link  social-link--twitter" href="https://twitter.com/?lang=ru"><img src="http://placehold.it/50x50"></a>
-          <a class="social-link  social-link--fb" href="https://facebook.com/htmlacademy"><img src="http://placehold.it/50x50"></a>
-          <a class="social-link  social-link--youtube" href="https://www.youtube.com/"><img src="http://placehold.it/50x50"></a>
+        <div class="page-footer__social-items">
+          <a class="page-footer__social-item   page-footer__social-item--twitter" href="https://twitter.com/?lang=ru"><img src="http://placehold.it/20x18"></a>
+          <a class="page-footer__social-item   page-footer__social-item--fb" href="https://facebook.com/htmlacademy"><img src="http://placehold.it/20x18"></a>
+          <a class="page-footer__social-item   page-footer__social-item--youtube" href="https://www.youtube.com/"><img src="http://placehold.it/20x18"></a>
         </div>
 
         <div class="page-footer__copyright">
           <p class="page-footer__text">Разработано</p>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
-            <img src="http://placehold.it/30x35">
+            <img src="http://placehold.it/27x35">
           </a>
         </div>
       </div>
