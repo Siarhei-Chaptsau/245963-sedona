@@ -2,33 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Отзыв</title>
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header__items">
-        <li class="page-header__item"><a class="page-header__link" href="#">Главная</a></li>
-        <li class="page-header__item"><a class="page-header__link" href="#">Фото и видео</a></li>
-        <li class="page-header__item"><a class="page-header__link" href="#">Форма отзыва</a></li>
-        <li class="page-header__item"><a class="page-header__link" href="https://htmlacademy.ru">Html academy</a></li>
+      <nav class="page-header__wrapper">
+        <ul class="page-header__items">
+          <li class="page-header__item"><a class="page-header__link" href="#">Главная</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="#">Фото и видео</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="#">Форма отзыва</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="https://htmlacademy.ru">Html academy</a></li>
+          <li class="page-header__item  page-header__item--logo">
+            <a class="page-header__logo-link" href="#"><img src="http://placehold.it/103x85" alt="logo"></a>
+            <button class="page-header__trigger" type="button"></button>
+          </li>
+        </ul>
       </nav>
-
-      <div class="page-header__logo">
-        <a class="page-header__logo-link" href="#"><img src="http://placehold.it/100x80" alt="logo"></a>
-        <button class="page-header__trigger" type="button"></button>
-      </div>
     </header>
 
     <div class="promo">
       <div class="promo__picture">
-        <img src="http://placehold.it/320x200" alt="Sedona">
+        <img src="img/bg-back-mobile@1x.jpg" width="320" height="160" alt="Sedona"  class="promo__img">
       </div>
-      <h3 class="promo__title">Ооставьте свой отзыв</h3>
-      <p class="promo__text">Помогите нашим отелям стать лучше оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+      <div class="promo__item">
+        <h3 class="promo__title  promo__title--big">Оставьте свой отзыв</h3>
+        <p class="promo__text">Помогите нашим отелям стать лучше оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+      </div>
     </div>
 
     <form class="form"  action="https://echo.htmlacademy.ru/">
-      <div class="form__field field-text">
+      <div class="form__field  field-text">
         <h3 class="field-text__title">Представьтесь:</h3>
         <div class="field-text__items">
           <label class="field-text__item">
@@ -46,22 +50,22 @@
         </div>
       </div>
 
-      <div class="form__field field-text">
+      <div class="form__field  field-text">
         <h3 class="field-text__title">Контактная информация:</h3>
         <div class="field-text__items">
-          <label class="field-text__item"  >
+          <label class="field-text__item  field-text__item--column">
             <span class="field-text__text">Контактный телефон*:</span>
             <input class="field-text__input" type="tel" name="tel" placeholder="Введите телефон">
             <span>Ошибка, переправьте номер</span>
           </label>
-          <label class="field-text__item">
+          <label class="field-text__item  field-text__item--column">
             <span class="field-text__text">Электронная почта*:</span>
             <input class="field-text__input" type="email" name="email" placeholder="Введите e-mail">
           </label>
         </div>
       </div>
 
-      <div class="form__field field-radio">
+      <div class="form__field  field-radio">
         <h3 class="field-radio__title">Ваше общее впечатление:</h3>
         <div class="field-radio__items">
           <label class="field-radio__item">
@@ -79,7 +83,7 @@
         </div>
       </div>
 
-      <div class="form__field field-checkbox">
+      <div class="form__field  field-checkbox">
         <h3 class="field-checkbox__title">Посещённые достопримечательности:</h3>
         <div class="field-checkbox__items">
           <label class="field-checkbox__item">
@@ -101,20 +105,23 @@
         </div>
       </div>
 
-      <div class="form__field field-review">
-        <label class="field-review__label"  for="review">Опишите свои эмоции:</label>
-        <textarea class="field-review__textarea"  type="text"  id="review"  name="review-field"  placeholder="Опишите подробно все свои восторги"></textarea>
-        <input class="field-review__btn  btn"  type="submit"  value="Отправить отзыв">
+      <div class="form__field  field-text">
+        <label class="field-text__label"  for="review">Опишите свои эмоции:</label>
+        <textarea class="field-text__textarea"  type="text"  id="review"  name="review-field"  placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+
+      <div class="form__field  field-action">
+        <input class="field-action__btn  btn"  type="submit"  value="Отправить отзыв">
       </div>
     </form>
 
     <footer class="page-footer">
       <div class="page-footer__contacts">
         <a class="page-footer__hashtag" href="https://www.google.com/">#VISITSEDONA</a>
-        <div class="page-footer__social  social-links">
-          <a class="social-link  social-link--twitter" href="https://twitter.com/?lang=ru"><img src="http://placehold.it/50x50"></a>
-          <a class="social-link  social-link--fb" href="https://facebook.com/htmlacademy"><img src="http://placehold.it/50x50"></a>
-          <a class="social-link  social-link--youtube" href="https://www.youtube.com/"><img src="http://placehold.it/50x50"></a>
+        <div class="page-footer__social-items">
+          <a class="page-footer__social-item   page-footer__social-item--twitter" href="https://twitter.com/?lang=ru"><img src="http://placehold.it/20x18"></a>
+          <a class="page-footer__social-item   page-footer__social-item--fb" href="https://facebook.com/htmlacademy"><img src="http://placehold.it/20x18"></a>
+          <a class="page-footer__social-item   page-footer__social-item--youtube" href="https://www.youtube.com/"><img src="http://placehold.it/20x18"></a>
         </div>
 
         <div class="page-footer__copyright">

@@ -1,0 +1,148 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 320px;
+  height: 350px;
+  background-color: @color-2;
+  font-family: @font-family__text;
+
+  &--big {
+    height: 613px;
+  }
+}
+
+.promo__picture {
+  margin-top: -29px;
+  text-align: center;
+}
+
+.promo__img {
+  width: 320px;
+  height: 160px;
+
+  &--big {
+    height: 390px;
+  }
+}
+
+.promo__item {
+  height: 224px;
+  padding-top: 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.promo__title {
+  padding: 0px 12px;
+  margin: 0px 0px 25px;
+  text-align: center;
+  font-size: @font-size__title;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.promo__text {
+  padding: 0px 8px;
+  margin: 0px;
+  text-align: center;
+  font-size: @font-size__text;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+
+@media @tablet-widths {
+  .promo {
+    width: 768px;
+    height: 540px;
+
+    &--big {
+      height: 725px;
+    }
+  }
+
+  .promo__img {
+    width: 768px;
+    height: 290px;
+
+    &--big {
+      height: 520px;
+    }
+  }
+
+  .promo__item {
+    height: 206px;
+    width: 460px;
+
+    &--big {
+      height: 248px;
+    }
+
+    &--wide {
+      width: 500px;
+    }
+  }
+
+  .promo__title--big {
+    font-size: @font-size__title--big;
+  }
+
+  .promo__text {
+    font-size: @font-size__text--small;
+  }
+}
+
+@media @desktop-widths {
+  .promo {
+    width: 1280px;
+    height: 550px;
+
+    &--big {
+      height: 725px;
+    }
+
+    &--middle {
+      height: 590px;
+    }
+  }
+
+  .promo__wrapper {
+    .container();
+  }
+
+  .promo__img {
+    width: 1200px;
+    height: 300px;
+
+    &--big {
+      height: 520px;
+    }
+  }
+
+  .promo__item {
+    height: 290px;
+    width: 460px;
+    margin-top: 100px;
+
+    &--big {
+      height: 260px;
+    }
+
+    &--wide {
+      width: 500px;
+      height: 205px;
+      margin-top: 40px;
+    }
+  }
+
+  .promo__title--big {
+    font-size: @font-size__title--big;
+  }
+
+  .promo__text {
+    font-size: @font-size__text--small;
+  }
+}
