@@ -22,16 +22,19 @@
     </header>
 
     <div class="promo">
-      <div class="promo__picture">
-        <img src="img/bg-back-mobile@1x.jpg" width="320" height="160" alt="Sedona"  class="promo__img">
-      </div>
-      <div class="promo__item">
-        <h3 class="promo__title  promo__title--big">Оставьте свой отзыв</h3>
-        <p class="promo__text">Помогите нашим отелям стать лучше оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+      <div class="promo__wrapper">
+        <div class="promo__picture">
+          <img src="img/bg-back-mobile@1x.jpg" width="320" height="160" alt="Sedona"  class="promo__img">
+        </div>
+        <div class="promo__item">
+          <h3 class="promo__title  promo__title--big">Оставьте свой отзыв</h3>
+          <p class="promo__text">Помогите нашим отелям стать лучше оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+        </div>
       </div>
     </div>
 
     <form class="form"  action="https://echo.htmlacademy.ru/">
+      <div class="form__wrapper">
       <div class="form__field  field-text">
         <h3 class="field-text__title">Представьтесь:</h3>
         <div class="field-text__items">
@@ -50,13 +53,13 @@
         </div>
       </div>
 
-      <div class="form__field  field-text">
+      <div class="form__field  field-text  field-text--wide">
         <h3 class="field-text__title">Контактная информация:</h3>
-        <div class="field-text__items">
+        <div class="field-text__items  field-text__items--wide">
           <label class="field-text__item  field-text__item--column">
             <span class="field-text__text">Контактный телефон*:</span>
             <input class="field-text__input" type="tel" name="tel" placeholder="Введите телефон">
-            <span>Ошибка, переправьте номер</span>
+            <span class="field-text__span">Ошибка, переправьте номер</span>
           </label>
           <label class="field-text__item  field-text__item--column">
             <span class="field-text__text">Электронная почта*:</span>
@@ -112,23 +115,29 @@
 
       <div class="form__field  field-action">
         <input class="field-action__btn  btn"  type="submit"  value="Отправить отзыв">
+        <div class="field-action__item">
+         <span class="field-action__text">* - обязательные поля</span>
+        </div>
+      </div>
       </div>
     </form>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts">
-        <a class="page-footer__hashtag" href="https://www.google.com/">#VISITSEDONA</a>
-        <div class="page-footer__social-items">
-          <a class="page-footer__social-item   page-footer__social-item--twitter" href="https://twitter.com/?lang=ru"><img src="http://placehold.it/20x18"></a>
-          <a class="page-footer__social-item   page-footer__social-item--fb" href="https://facebook.com/htmlacademy"><img src="http://placehold.it/20x18"></a>
-          <a class="page-footer__social-item   page-footer__social-item--youtube" href="https://www.youtube.com/"><img src="http://placehold.it/20x18"></a>
-        </div>
-
-        <div class="page-footer__copyright">
-          <p class="page-footer__text">Разработано</p>
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
-            <img src="http://placehold.it/30x35">
-          </a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts  page-footer__contacts--medium">
+          <div class="page-footer__hashtag-container">
+            <a class="page-footer__hashtag" href="#">#VISITSEDONA</a>
+          </div>
+          <div class="page-footer__social-items">
+            <a class="page-footer__social-item   page-footer__social-item--twitter" href="https://twitter.com/?lang=ru"><img src="http://placehold.it/20x18"></a>
+            <a class="page-footer__social-item   page-footer__social-item--fb" href="https://facebook.com/htmlacademy"><img src="http://placehold.it/20x18"></a>
+            <a class="page-footer__social-item   page-footer__social-item--youtube" href="https://www.youtube.com/"><img src="http://placehold.it/20x18"></a>
+          </div>
+          <div class="page-footer__copyright">
+            <p class="page-footer__text">Разработано</p>
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+              <img src="http://placehold.it/27x35"></a>
+          </div>
         </div>
       </div>
     </footer>

@@ -9,3 +9,37 @@
   background-color: @color-2;
   font-family: @font-family__text;
 }
+
+@media @tablet-widths {
+  .form {
+    width: 768px;
+    height: 1360px;
+  }
+
+  .form__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 768px;
+    height: 1360px;
+  }
+}
+
+@media @desktop-widths {
+  .form {
+    width: 100%;
+    height: 1170px;
+    background-color: @color-1;
+  }
+
+  .form__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 960px;
+    .container();
+    background-color: @color-2;
+  }
+}

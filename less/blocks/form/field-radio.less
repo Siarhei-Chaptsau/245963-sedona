@@ -5,12 +5,13 @@
   height: 290px;
   border-bottom: 2px solid @color-1;
   font-family: inherit;
+}
 
   .field-radio__items {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:flex-start;
+    align-items: flex-start;
   }
 
   .field-radio__item {
@@ -36,5 +37,23 @@
     margin-left: 25px;
     font-size: @font-size__title;
     line-height: 26px;
+  }
+
+
+@media @tablet-widths {
+  .field-radio {
+    align-items: flex-start;
+    width: 324px;
+    height: 370px;
+    order: -2;
+  }
+}
+
+@media @desktop-widths {
+  .field-radio {
+    align-items: space-around;
+    width: 480px;
+    height: 370px;
+    order: -2;
   }
 }

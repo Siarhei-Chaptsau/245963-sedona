@@ -139,7 +139,8 @@
 
 @media @desktop-widths {
   .reason {
-    width: 1280px;
+    width: 100%;
+    background-color: @color-1;
 
     &:first-child {
       height: 256px;
@@ -148,6 +149,13 @@
     &:last-child {
       height: 513px;
     }
+  }
+
+  .reason__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .container();
+    background-color: @color-2;
   }
 
   .reason__item {
@@ -182,12 +190,6 @@
   .reason__img {
     width: 800px;
     height: 256px;
-  }
-
-  .reason__wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    .container();
   }
 
   .reason__item--no-img {
