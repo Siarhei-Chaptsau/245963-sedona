@@ -1,0 +1,43 @@
+.reasons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 320px;
+  font-family: @font-family__text;
+}
+
+.reasons__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+}
+
+
+@media @tablet-widths {
+  .reasons {
+    width: 768px;
+  }
+
+  .reasons__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+}
+
+
+@media @desktop-widths {
+  .reasons {
+    width: 100%;
+    background-color: @color-1;
+  }
+
+  .reasons__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .container();
+    background-color: @color-2;
+  }
+}

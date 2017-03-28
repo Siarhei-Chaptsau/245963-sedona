@@ -1,33 +1,32 @@
 .video {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items:center;
   padding: 0;
   margin: 0 auto;
   width: 320px;
-  height: 460px;
   background-color: @color-2;
 }
 
 .video__wrapper {
-  isplay: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items:center;
-  height: 460px;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
 }
 
 .video__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
-  margin-top: 40px;
+  align-items: center;
+  padding: 32px 35px;
+  box-sizing: border-box;
 }
 
 .video__title {
-  margin: 0px;
+  margin: 0px 0px 30px;
   font-size: @font-size__title;
   line-height: 26px;
   font-weight: bold;
@@ -35,7 +34,7 @@
 }
 
 .video__text {
-  margin: 30px 25px 35px;
+  margin: 0;
   text-align: center;
   font-size: @font-size__text;
   line-height: 24px;
@@ -46,25 +45,25 @@
 @media @tablet-widths {
   .video {
     width: 768px;
-    height: 745px;
   }
 
   .video__wrapper {
-    .container();
+    margin: 0 auto;
     width: 648px;
-    height: 745px;
   }
 
   .video__item {
-    margin-top: 60px;
+    width: 648px;
+    padding: 62px 60px 77px;
   }
 
   .video__title {
-    font-size: @font-size__title--big;
+    margin: 0px 0px 31px;
+    font-size: @font-size__title--large;
   }
 
   .video__text {
-    margin: 30px 100px 80px;
+    margin: 0px 60px;
   }
 
   .video__clip {
@@ -77,26 +76,26 @@
 @media @desktop-widths {
   .video {
     width: 100%;
-    height: 748px;
     background-color: @color-1;
   }
 
   .video__wrapper {
     .container();
-    height:748px;
     background-color: @color-2;
   }
 
   .video__item {
-    margin-top: 70px;
+    width: 1200px;
+    padding: 66px 200px 75px;
   }
 
   .video__title {
-    font-size: @font-size__title--big;
+    margin: 0px 0px 30px;
+    font-size: @font-size__title--large;
   }
 
   .video__text {
-    margin: 30px 370px 75px;
+    margin: 0px 190px;
   }
 
   .video__clip {
