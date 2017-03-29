@@ -1,11 +1,9 @@
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   width: 280px;
-  height: 1700px;
-  flex-grow: 1;
   background-color: @color-2;
   font-family: @font-family__text;
 }
@@ -13,23 +11,20 @@
 @media @tablet-widths {
   .form {
     width: 768px;
-    height: 1360px;
   }
 
   .form__wrapper {
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     flex-wrap: wrap;
     flex-direction: row;
     width: 768px;
-    height: 1360px;
   }
 }
 
 @media @desktop-widths {
   .form {
     width: 100%;
-    height: 1170px;
     background-color: @color-1;
   }
 
@@ -38,7 +33,6 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 960px;
     .container();
     background-color: @color-2;
   }
