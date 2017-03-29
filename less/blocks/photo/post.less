@@ -1,31 +1,97 @@
 .post {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
   margin: 0 auto;
   width: 320px;
-  height: 2124px;
   background-color: @color-2;
   font-family: @font-family__text;
+}
+
+.post__wrapper {
+  display: flex;
+  width: 320px;
+}
+
+.post__items {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.post__item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 20px 0px 0px;
+  border-top: 1px solid @color-1-2;
+
+  &:last-child {
+    border-bottom: 1px solid @color-1-2;
+  }
+}
+
+.post__container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 280px;
+  padding: 20px 0px 18px;
+}
+
+.post__blockquote {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 280px;
+  margin: 0;
+  padding: 0px 0px 5px;
+}
+
+.post__title {
+  margin: 0px 0px 9px;
+  font-size: @font-size__text;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.post__text {
+  font-size: @font-size__text;
+  font-style: normal;
+}
+
+.post__amount {
+  margin-left: 9px;
+  font-weight: bold;
+}
+
+
+@media @tablet-widths {
+  .post {
+    width: 768px;
+  }
+
+  .post__wrapper {
+    align-items: center;
+    width: 768px;
+    margin: 0 auto;
+  }
 
   .post__items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 648px;
+    margin: 0 auto;
   }
 
   .post__item {
-    display: block;
-    height: 415px;
-    padding: 25px 0px 20px;
-    box-sizing:border-box;
-    border-top: 1px solid @color-1-2;
-    border-bottom: 1px solid @color-1-2;
+    justify-content: flex-start;
+    width: 324px;
+    padding: 0;
+    border-top: none;
 
     &:first-child {
-      border-top: none;
+      width: 648px;
     }
 
     &:last-child {
@@ -33,39 +99,114 @@
     }
   }
 
+  .post__img {
+    width: 324px;
+    height: 270px;
+
+    &--big {
+      width: 648px;
+      height: 400px;
+    }
+  }
+
+  .post__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px 0px 17px;
+    width: 324px;
+    background-color: @color-1-1;
+
+    &--wide {
+      width: 648px;
+    }
+  }
+
   .post__blockquote {
-    height: 40px;
-    margin: 15px 0px;
-    padding: 0px;
+    padding: 0px 0px 0px 20px;
+  }
+
+  .post__like-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px 20px 0px 0px;
+  }
+}
+
+
+@media @desktop-widths {
+  .post {
+    width: 100%;
+    background-color: @color-1;
+  }
+
+  .post__wrapper {
+    .container();
+    background-color: @color-2;
+  }
+
+  .post__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .post__item {
+    justify-content: flex-start;
+    width: 400px;
+    padding: 0;
+    flex-grow: 1;
+    border-top: none;
+
+    &:first-child {
+      width: 1200px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .post__img {
+    width: 400px;
+    height: 268px;
+
+    &--big {
+      width: 1200px;
+      height: 400px;
+    }
+  }
+
+  .post__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0px 17px;
+    width: 400px;
+    margin-top: -80px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: @color-2;
+
+    &--wide {
+      width: 1200px;
+    }
+  }
+
+  .post__blockquote {
+    padding: 0px 0px 0px 20px;
+  }
+
+  .post__like-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px 20px 0px 0px;
   }
 
   .post__title {
-    margin: 0px 0px 10px 0px;
-    font-size: @font-size__text;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .post__text {
-    font-size: @font-size__text;
-    font-style: normal;
-  }
-
-  .post__amount {
-    margin-left: 13px;
-    font-weight: bold;
-  }
-
-  .post__video {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:center;
-    box-sizing: border-box;
-    padding: 0;
-    padding-bottom: 90px;
-    width: 320px;
-    height: 460px;
-    background-color: @color-2;
+    font-weight: normal;
   }
 }

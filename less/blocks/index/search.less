@@ -1,34 +1,132 @@
 .search {
-  display: block;
-  /*flex-direction: column;
-  justify-content: center;*/
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   width: 320px;
-  height: 288px;
-  background-color: @color-2;
   font-family: @font-family__text;
+}
 
-  .search__title {
-    padding: 30px 0px 15px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
+.search__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+}
+
+.search__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+  width: 320px;
+}
+
+.search__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  box-sizing: border-box;
+
+  &:first-child {
+    margin: 0px 0px 32px;
+  }
+}
+
+.search__title {
+  margin: 0px 0px 20px;
+  text-align: center;
+  font-size: @font-size__title--more;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.search__text {
+  margin: 0px 15px;
+  padding: 0px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.search__btn {
+  display: block;
+  width: 280px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+
+@media @tablet-widths {
+  .search {
+    width: 768px;
   }
 
-  .search__text {
-    padding: 0px 15px 15px;
-    text-align: center;
-    font-size: @font-size__text;
-    line-height: 24px;
-    text-transform: uppercase;
+  .search__items {
+    width: 768px;
+    padding: 55px 154px 59px;
+  }
+
+  .search__item {
+    width: 460px;
+
+    &:first-child {
+      margin: 0px 0px 42px;
+    }
   }
 
   .search__btn {
-    display: block;
-    width: 280px;
-    height: 60px;
-    margin: 0 auto;
+    width: 460px;
+  }
+
+  .search__title {
+    margin: 0px 0px 30px;
+    font-size: 30.5px;
+  }
+
+  .search__text {
+    margin: 0px; /*как сделать отступы в первой строке больше?*/
+  }
+}
+
+@media @desktop-widths {
+  .search {
+    width: 100%;
+    background-color: @color-1;
+  }
+
+  .search__wrapper {
+    .container();
+    background-color: @color-2;
+  }
+
+  .search__items {
+    width: 1200px;
+    padding: 50px 154px 69px;
+  }
+
+  .search__item {
+    width: 460px;
+
+    &:first-child {
+      margin: 0px 0px 50px;
+    }
+  }
+
+  .search__btn {
+    width: 460px;
+  }
+
+  .search__title {
+    margin: 0px 0px 30px;
+    font-size: 30.5px;
+  }
+
+  .search__text {
+    margin: 0px;
   }
 }

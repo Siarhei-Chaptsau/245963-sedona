@@ -3,67 +3,177 @@
   flex-direction: column;
   margin: 0 auto;
   width: 320px;
-  height: 307px;
-  background-color: @color-4-1;
   font-family: @font-family__text;
+}
 
-  .page-header__list {
+.page-header__items {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 320px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: @font-size__title;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.page-header__item {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 15px 0px;
+  border-bottom: 2px solid @color-4-2;
+  border-top: 2px solid @color-5;
+  background-color: @color-4-1;
+  z-index: 1;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &:last-child {
+    border-top: none;
+  }
+}
+
+.page-header__link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color: @color-2;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  padding: 0px 0px 0px 110px;
+  box-sizing: border-box;
+  z-index: 1; /*не знаю почему не выставляет приоритет блоку*/
+  background-color: @color-2;
+}
+
+.page-header__logo-link {
+  display: block;
+  width: 103px;
+  height: 83px;
+  text-indent: -9999px;
+  background: url("../img/logo-sedona-mobile.svg");
+  background-size: 103px 83px;
+  z-index: 1;
+}
+
+.page-header__trigger {
+  width: 22px;
+  height: 21px;
+  margin-top: 15px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: none;
+  background-color: @color-2;
+  z-index: 1;
+}
+
+
+@media @tablet-widths {
+  .page-header {
+    width: 768px;
+  }
+
+  .page-header__wrapper {
     display: flex;
-    flex-direction: column;
-    width: 320px;
-    height: 225px;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    font-size: @font-size__title;
-    line-height: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
+    justify-content: space-around;
   }
 
-  .page-header__item {
-    min-width: 320px;
-    height: 54px;
-    border-bottom: 2px solid @color-4-2;
-    border-top: 2px solid @color-5;
-    padding: 12px 0px;
-
-    &:first-child {
-      border-top: none;
-    }
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-
-  .page-header__link {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    text-decoration: none;
-    color: @color-2;
-  }
-
-  .page-header__logo {
-    display: flex;
+  .page-header__items {
     flex-direction: row;
-    justify-content:flex-end;
-    min-width: 320px;
-    height: 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 768px;
+    font-size: @font-size__text;
     background-color: @color-2;
     z-index: 1;
   }
 
-  .page-header__logo-link {
-    margin-right: 95px;
+  .page-header__item {
+    width: 20%;
+    border: none;
+    background-color: @color-2;
+    color: @color-3;
+
+    &:nth-child(2)  {
+      margin-right: 153px;
+    }
+  }
+
+  .page-header__link {
+    color: @color-3;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    width: 103px;
+    padding: 0px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
   }
 
   .page-header__trigger {
-    width: 22px;
-    height: 22px;
-    margin-top: 17px;
+    display: none;
+  }
+}
+
+
+@media @desktop-widths {
+  .page-header {
+    width: 100%;
+    background-color: @color-1;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-around;
+    .container();
+    background-color: @color-2;
+  }
+
+  .page-header__items {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 1200px;
+    font-size: @font-size__text;
+    background-color: @color-2;
+  }
+
+  .page-header__item {
+    width: 20%;
     border: none;
-    background-color: @color-4;
+    background-color: @color-2;
+    color: @color-3;
+  }
+
+  .page-header__link {
+    color: @color-3;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    width: 103px;
+    padding:0px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+  }
+
+  .page-header__trigger {
+    display: none;
   }
 }
