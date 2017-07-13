@@ -1,35 +1,50 @@
 .promo {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  display: block;
+  position: relative;
+  width: 320px;
   margin: 0 auto;
-  margin-top: -28px;
-  width: 320px;
-  background-color: @color-2;
-  font-family: @font-family__text;
+  margin-top: 58px;
+}
 
-  &--small {
-    margin-top: 0px;;
+.promo__preview {
+  width: 320px;
+  height: 388px;
+  background: #5b7893 url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--mini {
+    height: 158px;
   }
 }
 
-.promo__picture {
-  text-align: center;
-  box-sizing: border-box;
-  height: 390px;
-
-  &--small {
-    height: 135px;
+@media (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .promo__preview {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
-.promo__img {
-  width: 320px;
-  height: 390px;
+.promo__img-text {
+  background-size: contain;
+  display: block;
+  margin: 0 auto;
+  width: 88%;
+  padding-top: 84px;
+  padding-bottom: 64px;
+  background-size: contain;
 
-  &--small {
-    margin-top: -255px;
+  &--mini {
+    width: 72%;
+    padding-top: 50px;
+    padding-bottom: 42px;
   }
+}
+
+.promo__img-triangle {
+  position: relative;
+  display: block;
+  background-size: 102%, cover;
+  background-position: center bottom;
 }
 
 .promo__item {
@@ -39,6 +54,8 @@
   padding: 35px 0px 10px;
   margin: 0 auto;
   box-sizing: border-box;
+  background-color: @color-2;
+  font-family: @font-family__text;
 
   &--wide {
     padding: 40px 0px 25px;
@@ -76,23 +93,46 @@
 @media @tablet-widths {
   .promo {
     width: 768px;
+    margin-top: 0px;
   }
 
-  .promo__picture {
-    width: 768px;
-    height: 520px;
+  .promo__wrapper {
+    margin: 0 auto;
+  }
 
-    &--small {
+  .promo__preview {
+    width: 768px;
+    height: 516px;
+    background: url("../img/bg-back-tablet@1x.jpg");
+
+    &--mini {
       height: 290px;
     }
   }
 
-  .promo__img {
-    width: 768px;
-    height: 520px;
+  @media(min-width: 768px) and (max-width: 1199px) and (min-resolution: 144dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 1.5dppx) {
+    .promo__preview {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
 
-    &--small {
-      margin-top: -230px;
+  .promo__img-text {
+    width: 458px;
+    padding-top: 78px;
+    padding-bottom: 88px;
+
+    &--mini {
+      padding-top: 110px;
+      padding-bottom: 92px;
+    }
+  }
+
+  .promo__img-triangle {
+    width: 772px;
+    bottom: 56px;
+
+    &--mini {
+      bottom: 49px;
     }
   }
 
@@ -124,6 +164,7 @@
 @media @desktop-widths {
   .promo {
     width: 100%;
+    margin-top: 0px;
     background-color: @color-1;
   }
 
@@ -132,21 +173,39 @@
     background-color: @color-2;
   }
 
-  .promo__picture {
-    height: 520px;
+  .promo__preview {
     width: 1200px;
+    height: 520px;
+    background: url("../img/bg-back-desktop@1x.jpg");
 
-    &--small {
+    &--mini {
       height: 300px;
     }
   }
 
-  .promo__img {
-    width: 1200px;
-    height: 520px;
+  @media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .promo__preview {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
 
-    &--small {
-      margin-top: -220px;
+  .promo__img-text {
+    width: 458px;
+    padding-top: 78px;
+    padding-bottom: 88px;
+
+    &--mini {
+      padding-top: 100px;
+      padding-bottom: 123px;
+    }
+  }
+
+  .promo__img-triangle {
+    width: 1202px;
+    bottom: 52px;
+
+    &--mini {
+      bottom: 60px;
     }
   }
 
@@ -157,6 +216,7 @@
     &--wide {
       padding: 50px 0px 56px;
     }
+
     &--big {
       padding: 108px 0px 70px;
     }

@@ -11,12 +11,18 @@
       <div class="page-header__wrapper">
         <ul class="page-header__items">
           <li class="page-header__item"><a class="page-header__link" href="#">Главная</a></li>
-          <li class="page-header__item"><a class="page-header__link" href="#">Фото и видео</a></li>
-          <li class="page-header__item"><a class="page-header__link" href="#">Форма отзыва</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="photo.html">Фото и видео</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="form.html">Форма отзыва</a></li>
           <li class="page-header__item"><a class="page-header__link" href="https://htmlacademy.ru">Html academy</a></li>
         </ul>
         <div class="page-header__logo">
-          <a class="page-header__logo-link" href="#"></a>
+          <a class="page-header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/logo-sedona-tablet.svg">
+              <img src="img/logo-sedona-mobile.svg" alt="Седона">
+            </picture>
+          </a>
           <button class="page-header__trigger" type="button">
             <svg version="1.0" id="Layer_1" fill="#81b3d2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
               <g>
@@ -32,8 +38,13 @@
 
     <div class="promo">
       <div class="promo__wrapper">
-        <div class="promo__picture">
-          <img src="img/bg-back-mobile@1x.jpg" width="320" height="390" alt="Sedona"  class="promo__img">
+        <div class="promo__preview">
+          <img class="promo__img-text" src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону">
+          <picture>
+            <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/bg-intro-triangle-tablet.svg">
+            <source media="(min-width:1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+            <img class="promo__img-triangle" src="img/bg-intro-triangle-mobile.svg" alt="Треугольник" width="320">
+          </picture>
         </div>
         <div class="promo__item  promo__item--wide">
           <h2 class="promo__title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
@@ -51,7 +62,11 @@
             <p class="reason__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="reason__picture">
-            <img src="img/photo-city@1x.jpg" width="320" height="260"  class="reason__img">
+            <picture>
+              <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <source media="(min-width:1200px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
+              <img class="reason__img" src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@1x.jpg 1x, img/photo-city-mobile@2x.jpg 2x" alt="Седона">
+            </picture>
           </div>
         </div>
       </div>
@@ -119,7 +134,11 @@
             <p class="reason__text">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
           </div>
           <div class="reason__picture  reason__picture--after-text">
-            <img src="img/photo-4-mobile@1x.jpg" width="320" height="260"  class="reason__img">
+            <picture>
+              <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <source media="(min-width:1200px)" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x">
+              <img class="reason__img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@1x.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x" alt="Мост">
+            </picture>
           </div>
         </div>
 
@@ -166,7 +185,8 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__location">
-          <img src="img/bg-map-mobile@1x.jpg" width="320" height="350"  class="page-footer__img">
+          <iframe class="page-footer__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050594469!2d-111.83015782304254!3d34.85437338108221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1488723440496" height="350" style="border:0" allowfullscreen>
+          </iframe>
         </div>
 
         <div class="page-footer__contacts">

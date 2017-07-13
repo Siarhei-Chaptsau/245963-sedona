@@ -2,21 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="css/style.css" rel="stylesheet">
     <title>Отзыв</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header  page-header--small">
       <div class="page-header__wrapper">
         <ul class="page-header__items">
-          <li class="page-header__item"><a class="page-header__link" href="#">Главная</a></li>
-          <li class="page-header__item"><a class="page-header__link" href="#">Фото и видео</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="index.html">Главная</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="photo.html">Фото и видео</a></li>
           <li class="page-header__item"><a class="page-header__link" href="#">Форма отзыва</a></li>
           <li class="page-header__item"><a class="page-header__link" href="https://htmlacademy.ru">Html academy</a></li>
         </ul>
         <div class="page-header__logo">
-          <a class="page-header__logo-link" href="#"></a>
+          <a class="page-header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/logo-sedona-tablet.svg">
+              <img src="img/logo-sedona-mobile.svg" alt="Седона">
+            </picture>
+          </a>
           <button class="page-header__trigger" type="button">
             <svg version="1.0" id="Layer_1" fill="#81b3d2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
               <g>
@@ -30,10 +36,15 @@
       </div>
     </header>
 
-    <div class="promo  promo--small">
+    <div class="promo  promo--mini">
       <div class="promo__wrapper">
-        <div class="promo__picture  promo__picture--small">
-          <img src="img/bg-back-mobile@1x.jpg" width="320" height="160" alt="Sedona"  class="promo__img  promo__img--small">
+        <div class="promo__preview  promo__preview--mini">
+          <img class="promo__img-text  promo__img-text--mini" src="img/text-sedona.svg" alt="Седона">
+          <picture>
+            <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/bg-intro-triangle-tablet.svg">
+            <source media="(min-width:1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+            <img class="promo__img-triangle  promo__img-triangle--mini" src="img/bg-intro-triangle-mobile.svg" alt="Треугольник">
+          </picture>
         </div>
         <div class="promo__item">
           <h3 class="promo__title  promo__title--big">Оставьте свой отзыв</h3>
@@ -65,14 +76,16 @@
       <div class="form__field  field-text  field-text--wide">
         <h3 class="field-text__title  field-text__title--center">Контактная информация:</h3>
         <div class="field-text__items  field-text__items--wide">
-          <label class="field-text__item  field-text__item--column-reverse">
-            <span class="field-text__text  field-text__text--column  field-text__text--column-reverse"><span class="field-text__hidden">Контактный </span>телефон*:</span>
+          <label class="field-text__item  field-text__item--wide  field-text__item--wide-reverse">
+            <span class="field-text__text  field-text__text--wide  field-text__text--wide-reverse"><span class="field-text__hidden">Контактный </span>телефон*:</span>
             <input class="field-text__input  field-text__input--wide" type="tel" name="tel" placeholder="Введите телефон">
+            <span class="field-text__icon  field-text__icon--phone"></span>
             <span class="field-text__span">Ошибка, переправьте номер</span>
           </label>
-          <label class="field-text__item  field-text__item--column">
-            <span class="field-text__text  field-text__text--column">Электронная почта*:</span>
+          <label class="field-text__item  field-text__item--wide">
+            <span class="field-text__text  field-text__text--wide">Электронная почта*:</span>
             <input class="field-text__input  field-text__input--wide" type="email" name="email" placeholder="Введите e-mail">
+            <span class="field-text__icon  field-text__icon--email"></span>
           </label>
         </div>
       </div>
