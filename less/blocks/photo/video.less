@@ -1,0 +1,275 @@
+.video {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  padding: 0;
+  margin: 0 auto;
+  width: 320px;
+  background-color: @color-2;
+}
+
+.video__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+}
+
+.video__item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 35px;
+  box-sizing: border-box;
+}
+
+.video__title {
+  margin: 0px 0px 30px;
+  font-size: @font-size__title;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.video__text {
+  margin: 0;
+  text-align: center;
+  font-size: @font-size__text;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.video__player {
+  margin-top: -1px;
+}
+
+.video__dot {
+  z-index: 4;
+}
+
+.video__control-bar {
+  display: flex;
+  width: 280px;
+  height: 66px;
+  background-color: @color-1;
+}
+
+.video__icon {
+  margin-top: 11px;
+  margin-right: 22px;
+  z-index: 5;
+  display: inline-block;
+  vertical-align: top;
+  height: 21px;
+  width: 21px;
+  fill: #5c6870;
+  stroke: #5c6870;
+}
+
+.video__icon:active {
+  fill: #c1c1c1;
+  stroke: #c1c1c1;
+}
+
+.video__icon:hover {
+  fill: #333333;
+  stroke: #333333;
+}
+
+.video__bar {
+  z-index: 3;
+  width: 280px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  left: -279px;
+  top: -46px;
+}
+
+.video__icon--replay {
+  margin-top: 20px;
+  margin-left: 22px;
+}
+
+.video__icon--subtitles {
+  height: 20px;
+  width: 34px;
+  margin-top: 21px;
+  margin-left: 108px;
+}
+
+.video__icon--fullscreen {
+  height: 24px;
+  width: 21px;
+  margin-left: 7px;
+  margin-top: 19px;
+}
+
+.video__dot {
+  height: 4px;
+  width: 280px;
+}
+
+.video__dot::after {
+  content: "";
+  display: block;
+  position: relative;
+  background-color: rgba(105,105,105,0.6);
+  width: 235px;
+  height: 3px;
+  top: 14px;
+  left: 21px;
+  margin: 0;
+}
+
+.video__dot::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: @color-2;
+  top: 19px;
+  left: 60px;
+  z-index: 10;
+}
+
+@media @tablet-widths {
+  .video {
+    width: 768px;
+  }
+
+  .video__wrapper {
+    margin: 0 auto;
+    width: 648px;
+  }
+
+  .video__item-text {
+    width: 648px;
+    padding: 62px 60px 77px;
+  }
+
+  .video__title {
+    margin: 0px 0px 31px;
+    font-size: @font-size__title--large;
+  }
+
+  .video__text {
+    margin: 0px 60px;
+  }
+
+  .video__player {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    top: -97px;
+  }
+
+  .video__item:first-child {
+    order: -2;
+  }
+
+  .video__icon {
+    fill: @color-2;
+    stroke: @color-2;
+  }
+
+  .video__dot::after {
+    width: 389px;
+  }
+
+  .video__control-bar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: space-around;
+    width: 648px;
+    height: 94px;
+    position: relative;
+  }
+
+  .video__bar {
+    position: static;
+    background-color: rgba(0, 0, 0, 0);
+    order: -1;
+  }
+
+  .video__icon--replay {
+    margin-top: 34px;
+    margin-left: 23px;
+  }
+
+  .video__icon--subtitles {
+    margin-top: 35px;
+    margin-left: 143px;
+  }
+
+  .video__icon--fullscreen {
+    margin-left: 3px;
+    margin-top: 34px;
+  }
+
+  .video__dot::before {
+    top: 43px;
+    left: 103px;
+  }
+
+  .video__dot::after {
+    top: 36px;
+    left: -11px;
+  }
+}
+
+
+@media @desktop-widths {
+  .video {
+    width: 100%;
+    background-color: @color-1;
+  }
+
+  .video__wrapper {
+    .container();
+    background-color: @color-2;
+  }
+
+  .video__item-text {
+    width: 1200px;
+    padding: 66px 200px 75px;
+  }
+
+  .video__title {
+    margin: 0px 0px 30px;
+    font-size: @font-size__title--large;
+  }
+
+  .video__text {
+    margin: 0px 190px;
+  }
+
+  .video__player {
+    width: 800px;
+  }
+
+  .video__control-bar {
+    width: 800px;
+  }
+
+  .video__icon--replay {
+    margin-left: 25px;
+  }
+
+  .video__dot::after {
+    width: 540px;
+    left: 5px;
+  }
+
+  .video__dot::before {
+    left: 118px;
+  }
+
+  .video__icon--subtitles {
+    margin-left: 300px;
+  }
+}
