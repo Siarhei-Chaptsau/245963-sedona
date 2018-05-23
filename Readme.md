@@ -1,12 +1,19 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-Студент: [Siarhei Chaptsau](https://htmlacademy.ru/profile/id245963).
+Студент: [Siarhei Chaptsau](https://assets.htmlacademy.ru/certificates/intensive/35/245963.pdf).
+
+1. Использованы только HTML5, CSS3 и JavaScript.
+2. Макет сверстан в трех состояниях: мобильная, планшетная и десктопная.
+3. В верстке использовалась методология БЭМ.
+4. Сборщик Gulp и препроцессор Less.
+5. "Нежная" ретинизация.
 
 ---
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github.svg"></a>
 
-Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Продвинутый HTML и CSS](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
+Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный HTML и CSS,
+уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
 [travis-image]: https://travis-ci.org/htmlacademy-adaptive/245963-sedona.svg?branch=master
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/245963-sedona
